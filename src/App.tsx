@@ -98,7 +98,7 @@ export default function App() {
                 <Toolbar sx={{gap: 1}}>
                     <SportsBasketballIcon/>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                        ΑΣΑ Basket Camp
+                        ΑΣΑ Summer Camp
                     </Typography>
                     <Button href="#register" color="secondary" variant="contained">Εγγραφή</Button>
                 </Toolbar>
@@ -112,7 +112,7 @@ export default function App() {
                 <Container>
                     <Stack spacing={2} alignItems="center" textAlign="center">
                         <Chip label="Καλοκαίρι 2025" color="secondary" variant="filled"/>
-                        <Typography variant="h2">Αναγέννηση Summer Camp</Typography>
+                        <Typography variant="h2">Αναγέννηση Basketball Camp</Typography>
                         <Typography variant="h6" color="text.secondary" maxWidth={800}>
                             Δεξιότητες, shooting labs, strength & conditioning, βίντεο-ανάλυση και παιχνίδι. Ηλικίες
                             8–17.
@@ -157,7 +157,7 @@ export default function App() {
                                     height: 160,
                                     borderRadius: 2,
                                     backgroundImage:
-                                        'url(https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop)',
+                                        'url(https://www.cretalive.gr/sites/default/files/styles/og_image/public/2025-10/sxizas-anagennisi-arkaloxoriou.jpg?itok=fJvRgdXq?q=80&w=1200&auto=format&fit=crop)',
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                 }}/>

@@ -35,8 +35,5 @@ pnpm-debug.log*
 # TypeScript build outputs
 *.tsbuildinfo
 
-# Static files from the site during deploy or development
-public/
-
 # gh-pages folder
 gh-pages/
