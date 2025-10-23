@@ -105,26 +105,96 @@ export default function App() {
             </AppBar>
 
             {/* Εισαγωγικό section */}
-            <Box sx={{
-                background: 'radial-gradient(circle at 15% 20%, rgba(255,111,0,.15), transparent 40%), radial-gradient(circle at 85% 30%, rgba(13,71,161,.2), transparent 45%)',
-                py: {xs: 8, md: 10},
-            }}>
-                <Container>
-                    <Stack spacing={2} alignItems="center" textAlign="center">
-                        <Chip label="Καλοκαίρι 2025" color="secondary" variant="filled"/>
-                        <Typography variant="h2">Αναγέννηση Basketball Camp</Typography>
-                        <Typography variant="h6" color="text.secondary" maxWidth={800}>
+            <Box
+                sx={{
+                    position: 'relative',
+                    // 1) Σκούρο overlay + απαλά χρωματικά gradients + εικόνα από κάτω
+                    backgroundImage: [
+                        'linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62))',
+                        'radial-gradient(circle at 15% 25%, rgba(255,111,0,0.14), transparent 40%)',
+                        'radial-gradient(circle at 85% 35%, rgba(13,71,161,0.18), transparent 45%)',
+                        'url(https://www.sport24.gr/wp-content/uploads/2023/11/anagennisi-koupa-1200x800.jpg)',
+                    ].join(', '),
+                    backgroundSize: 'auto, auto, auto, cover',
+                    backgroundPosition: 'center, center, center, center',
+                    backgroundRepeat: 'no-repeat, no-repeat, no-repeat, no-repeat',
+
+                    // ύψος/spacing
+                    py: {xs: 10, md: 14},
+                    minHeight: {xs: 420, md: 520},
+
+                    // edge-to-edge look
+                    borderBottom: theme => `1px solid ${theme.palette.common.black}20`,
+                }}
+            >
+                <Container maxWidth="lg">
+                    {/* 2) Glass card πίσω από τα κείμενα για “δέσιμο” και αναγνωσιμότητα */}
+                    <Box
+                        sx={{
+                            mx: 'auto',
+                            maxWidth: 1000,
+                            px: {xs: 2.5, md: 4},
+                            py: {xs: 3, md: 4},
+                            borderRadius: 3,
+                            bgcolor: 'rgba(0,0,0,0.28)',
+                            backdropFilter: 'blur(2px)',
+                            boxShadow: '0 12px 40px rgba(0,0,0,.35)',
+                            textAlign: 'center',
+                            color: '#fff',
+                        }}
+                    >
+                        <Chip label="Καλοκαίρι 2025" color="secondary" sx={{mb: 2, fontWeight: 600}}/>
+
+                        <Typography
+                            variant="h2"
+                            sx={{
+                                fontWeight: 800,
+                                lineHeight: 1.1,
+                                textShadow: '0 4px 18px rgba(0,0,0,.55)',
+                                mb: 1.5,
+                            }}
+                        >
+                            Αναγέννηση Basketball Camp
+                        </Typography>
+
+                        <Typography sx={{color: 'rgba(255,255,255,.92)', mb: 3}}>
                             Δεξιότητες, shooting labs, strength & conditioning, βίντεο-ανάλυση και παιχνίδι. Ηλικίες
                             8–17.
                         </Typography>
-                        <Stack direction={{xs: 'column', sm: 'row'}} spacing={2}>
-                            <Button href="#register" size="large" variant="contained" endIcon={<EmailIcon/>}>Κάνε
-                                Εγγραφή</Button>
-                            <Button href="#info" size="large" variant="outlined">Μάθε περισσότερα</Button>
+
+                        <Stack direction={{xs: 'column', sm: 'row'}} spacing={2} justifyContent="center">
+                            <Button
+                                href="#register"
+                                size="large"
+                                variant="contained"
+                                endIcon={<EmailIcon/>}
+                                sx={{
+                                    px: 3,
+                                    fontWeight: 700,
+                                    boxShadow: '0 8px 24px rgba(0,0,0,.3)',
+                                }}
+                            >
+                                Κάνε Εγγραφή
+                            </Button>
+
+                            <Button
+                                href="#info"
+                                size="large"
+                                variant="outlined"
+                                sx={{
+                                    px: 3,
+                                    color: '#fff',
+                                    borderColor: 'rgba(255,255,255,.65)',
+                                    '&:hover': {borderColor: '#fff', backgroundColor: 'rgba(255,255,255,.08)'},
+                                }}
+                            >
+                                Μάθε περισσότερα
+                            </Button>
                         </Stack>
-                    </Stack>
+                    </Box>
                 </Container>
             </Box>
+
 
             {/* Πλέγμα Καρτών */}
             <Container id="info" sx={{py: 6}}>
