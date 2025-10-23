@@ -98,7 +98,7 @@ export default function App() {
                 <Toolbar sx={{gap: 1}}>
                     <SportsBasketballIcon/>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                        Basket Camp
+                        ΑΣΑ Basket Camp
                     </Typography>
                     <Button href="#register" color="secondary" variant="contained">Εγγραφή</Button>
                 </Toolbar>
@@ -112,7 +112,7 @@ export default function App() {
                 <Container>
                     <Stack spacing={2} alignItems="center" textAlign="center">
                         <Chip label="Καλοκαίρι 2026" color="secondary" variant="filled"/>
-                        <Typography variant="h2">Summer Basket Camp</Typography>
+                        <Typography variant="h2">Αναέννηση Summer Camp</Typography>
                         <Typography variant="h6" color="text.secondary" maxWidth={800}>
                             Δεξιότητες, shooting labs, strength & conditioning, βίντεο-ανάλυση και παιχνίδι. Ηλικίες
                             8–17.
@@ -148,9 +148,9 @@ export default function App() {
                     {/* Τοποθεσία */}
                     <Grid item xs={12} md={4}>
                         <Card>
-                            <CardHeader avatar={<PlaceIcon/>} title="Τοποθεσία" subheader="Κλειστό Δ.Α.Κ."/>
+                            <CardHeader avatar={<PlaceIcon/>} title="Τοποθεσία" subheader="Κλειστό Αρκαλοχωρίου"/>
                             <CardContent>
-                                <Typography>Οδός Γηπέδου 1, Πόλη</Typography>
+                                <Typography>Κλειστό Γυμναστήριο, Αρκαλοχώρι</Typography>
                                 <Typography color="text.secondary">Εύκολη πρόσβαση • Parking</Typography>
                                 <Divider sx={{my: 2}}/>
                                 <Box sx={{
@@ -168,7 +168,7 @@ export default function App() {
                     {/* Κόστος */}
                     <Grid item xs={12} md={4}>
                         <Card>
-                            <CardHeader avatar={<PaymentsIcon/>} title="Κόστος Συμμετοχής" subheader="190€ / παιδί"/>
+                            <CardHeader avatar={<PaymentsIcon/>} title="Κόστος Συμμετοχής" subheader="100€ / παιδί"/>
                             <CardContent>
                                 <Typography>Έκπτωση 15% για αδέρφια</Typography>
                                 <Divider sx={{my: 2}}/>
@@ -184,8 +184,9 @@ export default function App() {
                         <Card>
                             <CardHeader avatar={<InfoIcon/>} title="Προπονητές" subheader="Έμπειρο team"/>
                             <CardContent>
-                                <Typography>Head Coach: Γ. Παπαδόπουλος</Typography>
-                                <Typography color="text.secondary">Assistant: Μ. Κωνσταντίνου, Ν. Ιωάννου</Typography>
+                                <Typography>Head Coach: Α. Μαραγκάκης (ΛΕΜΕ ΤΩΡΑ)</Typography>
+                                <Typography color="text.secondary">Assistant: Κανένας, θα τα κάνει όλα ο σύντεκνος
+                                    μου</Typography>
                                 <Divider sx={{my: 2}}/>
                                 <Typography variant="body2" color="text.secondary">
                                     Μικρά γκρουπ & εξατομικευμένο feedback. Πιστοποιημένο πρόγραμμα προπόνησης.
@@ -263,7 +264,7 @@ export default function App() {
             <Box component="footer" sx={{py: 6, textAlign: 'center'}}>
                 <Typography variant="body2" color="text.secondary">
                     © {new Date().getFullYear()} Basket Camp • Επικοινωνία: <Link
-                    href="mailto:camp@yourclub.tld">camp@yourclub.tld</Link>
+                    href="mailto:camp@asanagennisi.gr">camp@asanagennisi.gr</Link>
                 </Typography>
             </Box>
 
