@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+*.log
+
+# Vite
+.vite/
+.vite-deploy/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+
+# macOS-specific files
+.DS_Store
+
+# TypeScript build outputs
+*.tsbuildinfo
+
+# Static files from the site during deploy or development
+public/
+
+# gh-pages folder
+gh-pages/
