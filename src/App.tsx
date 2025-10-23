@@ -112,7 +112,7 @@ export default function App() {
                 <Container>
                     <Stack spacing={2} alignItems="center" textAlign="center">
                         <Chip label="Καλοκαίρι 2026" color="secondary" variant="filled"/>
-                        <Typography variant="h2">Αναέννηση Summer Camp</Typography>
+                        <Typography variant="h2">Αναγέννηση Summer Camp</Typography>
                         <Typography variant="h6" color="text.secondary" maxWidth={800}>
                             Δεξιότητες, shooting labs, strength & conditioning, βίντεο-ανάλυση και παιχνίδι. Ηλικίες
                             8–17.
