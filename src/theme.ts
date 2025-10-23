@@ -2,8 +2,8 @@ import {createTheme} from '@mui/material/styles'
 
 export const theme = createTheme({
     palette: {
-        primary: {main: '#0d47a1'}, // deep blue
-        secondary: {main: '#ff6f00'}, // orange accent
+        primary: {main: '#0c780e'}, // deep blue
+        secondary: {main: '#9ab69a'}, // orange accent
     },
     shape: {borderRadius: 16},
     components: {
